@@ -21,9 +21,10 @@
     <h1>olá Mundo!</h1>
     <p>Já me livrei da maldição!!</p>
     <script>
-        window.alert('Minha primeira mensagem!');
-        window.confirm('Esta gostando do JS?') //janela com botão ok e cancela
-        window.prompt('Qual seu nome?') //vai perguntar o nome
+        var n1 = Number( window.prompt('Digite um número')) //string
+        var n2 = Number(window.prompt('Digite outro numero'))//string
+        var s = n1 + n2
+        window.alert(`A soma dos valores ${n1} e ${n2} a ${s}`)
     </script>
     
 </body>
