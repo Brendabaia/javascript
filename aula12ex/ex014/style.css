@@ -1,6 +1,6 @@
 body{
     background-color: rgb(70, 142, 236);
-    font: noraml 1pt Arial;
+    font: normal 15pt Arial;
 }
 
 header{
@@ -10,11 +10,16 @@ header{
 
 section{
     background-color: white;
-    border-radius: 20px;
+    border-radius: 10px;
     padding: 15px;
     margin: auto;  
     width: 500px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.274);
+}
+
+div {
+    text-align: center;
+    padding: 8px;
 }
 
 footer{
