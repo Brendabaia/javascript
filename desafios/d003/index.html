@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio antes e depois</title>
+    <style>
+        body{
+            font: normal 15px arial;
+        }
+        button{
+            width: 160px;
+            height: 50px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Antes e depois</h1>
+    <button onclick="clic()">Antecessor e Sucessor</button>
+
+    <script>
+        function clic(){
+           var n2 = Number(prompt('Digite um numero'))
+           var antes = n2 - 1
+           var depois = n2 + 1
+        alert(`Antes de ${n2}, temos o número ${antes}.
+Depois de ${n2}, temos o número ${depois}`)
+        }
+    </script>
+</body>
+</html>

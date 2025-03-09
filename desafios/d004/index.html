@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio calculo</title>
+    <style>
+        body{
+            font: normal 15px arial;
+        }
+        button{
+            width: 160px;
+            height: 50px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Calculando o Troco</h1>
+    <button onclick="clic()">Comprar produto</button>
+
+    <script>
+        function clic(){
+           var produto = prompt('Que produto você está comprando?')
+           var preço = Number(prompt(`Quanto custa ${produto} que você está comprando?`))
+           var valor =  Number(prompt(`Qual o valor que você deu para ${produto}`))
+           var res = valor - preço
+            alert(`Você comprou ${produto} que custou R$${preço}.
+ Deu R$ ${valor} em dinheiro e vai receber R$${res} de troco. 
+Volte sempre`)
+            }
+    </script>
+</body>
+</html>
