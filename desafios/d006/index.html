@@ -14,6 +14,7 @@
         }
         p{
             font: normal 16px arial;
+            font-weight: bolder;
         }
     </style>
 </head>
@@ -26,22 +27,13 @@
 
     <script>
         function clic(){
-           var metros = Number(prompt('Digite uma distância em metros(m)').replace(',','.'))
+           var cel = Number(prompt('Digite uma temperatura em °C (Celsius)').replace(',','.'))
            var res = document.getElementById('res')
-           var km = metros / 1000
-           var hm = metros / 100
-           var dam = metros / 10
-           var dm = metros * 10
-           var cm = metros * 100
-           var mm = metros * 1000
-           
-           res.innerHTML = `<p><strong>A distância de ${metros} metros, corresponde a...</strong></p>`
-           res.innerHTML += `${km} quilômetros (Km)<br>`
-           res.innerHTML += `${hm} hectômetros (Hm)<br>`
-           res.innerHTML += `${dam} decâmetros (Dam)<br>`
-           res.innerHTML += `${dm} decímetros (dm)<br>`
-           res.innerHTML += `${cm} centímetros (cm)<br>`
-           res.innerHTML += `${mm} milímetros (mm)<br>`
+           var kel = cel + 273.15
+           var fah = (cel * 9 / 5) + 32           
+           res.innerHTML = `<p>A temperatura de ${cel}°C, corresponde a...</p>`
+           res.innerHTML += `${kel}°K (Kelvin)<br>`
+           res.innerHTML += `${fah}°F (Fahrenheit)<br>`
             }
     </script>
 </body>
